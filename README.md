@@ -1,6 +1,6 @@
 # 8mylez-codeTask-TeamPage
 
-TeamPage ist ein Plugin, welches eine /team Seite zur storefront hinzufügt, auf welcher die Team Mitglieder der Website angezeigt werden können. 
+TeamPage ist ein Plugin, welches eine /team Seite zur storefront hinzufügt, auf welcher die Team Mitglieder der Website angezeigt werden können. Diese Seite wird auch im footer der storefront verlinkt.
 
 Die Team Mitglieder werden im backend gespeichert und können in der Administration und Content->Team Page geändert werden. 
 Zu jeder Personen können folgende Daten angelegt werden: Name, Beruf und Bild. 
