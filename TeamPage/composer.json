@@ -1,0 +1,27 @@
+{
+    "name": "team-page/team-page",
+    "description": "Creates a /team site and links to it in the footer.",
+    "type": "shopware-platform-plugin",
+    "version": "1.0.0",
+    "license": "MIT",
+    "require": {
+        "shopware/core": "6.5.*"
+    },
+    "extra": {
+        "shopware-plugin-class": "TeamPage\\TeamPage",
+        "label": {
+            "de-DE": "Team Page",
+            "en-GB": "Team Page"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "TeamPage\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "TeamPage\\Tests\\": "tests/"
+        }
+    }
+}

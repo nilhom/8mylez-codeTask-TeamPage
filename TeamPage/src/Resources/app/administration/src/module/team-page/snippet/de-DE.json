@@ -1,0 +1,22 @@
+{
+  "team-page": {
+    "general": {
+      "mainMenuItemGeneral": "Team Page",
+      "descriptionTextModule": "Verwalte die Team Mitglieder hier."
+    },
+    "index": {
+      "addButtonText": "Teammitglied hinzufügen",
+      "columnName": "Name",
+      "columnJob": "Job",
+      "columnPicture" : "Bild"
+    },
+    "detail": {
+      "nameLabel": "Name",
+      "jobLabel": "Job",
+      "pictureLabel": "Bild",
+      "cancelButtonText": "Abbruch",
+      "saveButtonText": "Speichern",
+      "errorTitle": "Fehler beim speichern des team members"
+    }
+  }
+}

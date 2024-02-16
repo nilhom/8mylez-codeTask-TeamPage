@@ -1,0 +1,13 @@
+{% sw_extends '@Storefront/storefront/layout/footer/footer.html.twig' %}
+
+{% block layout_footer_navigation %}
+    {{ parent() }}
+    <h2> About Us </h2>
+    <ul>
+        <li class="nav-item">
+            <a class="nav-link" href="{{ path('frontend.team.page') }}">
+                <span>Team</span>
+            </a>
+        </li>
+    </ul>
+{% endblock %}

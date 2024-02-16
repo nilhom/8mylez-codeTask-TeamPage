@@ -1,0 +1,26 @@
+{% block team_page_index %}
+    <sw-page class="team-page-index">
+
+        {% block team_page_index_smart_bar_actions %}
+        <template #smart-bar-actions>
+            <sw-button variant="primary" :routerLink="{name: 'team.page.create'}">
+                {{ $tc('team-page.index.addButtonText') }}
+            </sw-button>
+        </template>
+        {% endblock %}
+
+        <template #content>
+            {% block team_page_index_content %}
+                <sw-entity-listing
+                    v-if="teamMembers"
+                    :items="teamMembers"
+                    :repository="repository"
+                    :showSelection="false"
+                    :columns="columns"
+                    detailRoute="team.page.detail">
+                </sw-entity-listing>
+            {% endblock %}
+        </template>
+
+    </sw-page>
+{% endblock %}

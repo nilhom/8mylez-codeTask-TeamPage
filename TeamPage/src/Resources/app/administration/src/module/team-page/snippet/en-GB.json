@@ -1,0 +1,22 @@
+{
+  "team-page": {
+    "general": {
+      "mainMenuItemGeneral": "Team Page",
+      "descriptionTextModule": "Manage the team members here."
+    },
+    "index": {
+      "addButtonText": "Add Member",
+      "columnName": "Name",
+      "columnJob": "Job",
+      "columnPicture" : "Picture"
+    },
+    "detail": {
+      "nameLabel": "Name",
+      "jobLabel": "Job",
+      "pictureLabel": "Picture",
+      "cancelButtonText": "Cancel",
+      "saveButtonText": "Save",
+      "errorTitle": "Error saving the team member"
+    }
+  }
+}

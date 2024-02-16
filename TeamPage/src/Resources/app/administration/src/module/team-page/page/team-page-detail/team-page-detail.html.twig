@@ -1,0 +1,30 @@
+{% block team_page_detail %}
+    <sw-page class="team-page-detail">
+
+        <template #smart-bar-actions>
+            <sw-button :routerLink="{ name: 'team.page.index' }">
+                {{ $tc('team-page.detail.cancelButtonText') }}
+            </sw-button>
+
+            <sw-button-process
+                    :isLoading="isLoading"
+                    :processSuccess="processSuccess"
+                    variant="primary"
+                    @process-finish="saveFinish"
+                    @click="onClickSave">
+                {{ $tc('team-page.detail.saveButtonText') }}
+            </sw-button-process>
+        </template>
+
+        <template #content>
+            <sw-card-view>
+                <sw-card v-if="teamMembers" :isLoading="isLoading">
+                    <sw-field v-model="teamMembers.name" :label="$tc('team-page.detail.nameLabel')"></sw-field>
+                    <sw-field v-model="teamMembers.job" :label="$tc('team-page.detail.jobLabel')"></sw-field>
+                    <sw-field v-model="teamMembers.picture" :label="$tc('team-page.detail.pictureLabel')"></sw-field>
+                </sw-card>
+            </sw-card-view>
+        </template>
+
+    </sw-page>
+{% endblock %}
